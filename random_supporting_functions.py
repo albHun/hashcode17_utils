@@ -4,9 +4,9 @@ def table_construct(*argv):
 	"""Construct a table with argv."""
 	return table
 
-def get_table_element(table, *argv):
-	"""Return element in the table with given parameters."""
-	return element
+def get_table_elements(table, how_many, *argv):
+	"""Return elements in the table with given restriction parameters."""
+	return elements
 
 def load_input(input_data):
 	"""This function loads the input_data and change it to our preferred
@@ -30,7 +30,7 @@ def partition(table, grids_dir1, grids_dir2):
 	subtables = list()
 	count_dir1 = 0
 	count_dir2 = 0
-	
+	# To be completed, filling subtables with representation of partitioned subtables
 	return subtables
 
 def construct_random_blocks(table, *args):
@@ -46,5 +46,6 @@ def check_if_valid(table, covered, new_block):
 def update_covered(covered, new_block):
 	"""Say no more."""
 
-def check_rewards(table, covered):
-	"""Check how many point we have earned."""
+def check_rewards(table, methods):
+	"""Check how many points we have earned."""
+	# The implementation of this function must satisfy check_rewards(table, void) = 0
